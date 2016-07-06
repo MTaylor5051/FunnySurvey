@@ -1,4 +1,4 @@
-var http = require('http');
+// var http = require('http');
 var path = require('path');
 var express = require('express');
 var morgan = require('morgan');
@@ -25,7 +25,7 @@ app.post('/message', message);
 app.get('/results', results);
 
 // Create HTTP server and mount Express app
-var server = http.createServer(app);
-server.listen(config.port, function() {
-    console.log('Express server started on *:'+config.port);
-});
+// var server = http.createServer(app);
+// server.listen(config.port, function() {
+//     console.log('Express server started on *:'+config.port);
+// });
