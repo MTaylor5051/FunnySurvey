@@ -2,7 +2,6 @@
   "name": "survey-node",
   "version": "4.4.4",
   "description": "an automated survey conducted via voice and sms",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./bin/www"
