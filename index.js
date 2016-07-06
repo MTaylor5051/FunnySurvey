@@ -23,8 +23,8 @@ app.post('/message', message);
 // Ajax route to aggregate response data for the UI
 app.get('/results', results);
 
-// // Create HTTP server and mount Express app
-// var server = http.createServer(app);
-// server.listen(config.port, function() {
-//     console.log('Express server started on *:'+config.port);
-// });
+// Create HTTP server and mount Express app
+var server = http.createServer(app);
+server.listen(config.port, function() {
+    console.log('Express server started on *:'+config.port);
+});

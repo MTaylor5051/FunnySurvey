@@ -1,9 +1,10 @@
 {
   "name": "survey-node",
-  "version": "4.4.4",
+  "version": "1.0.0",
   "description": "an automated survey conducted via voice and sms",
+  "main": "index.js",
   "scripts": {
-    "start": "node ./bin/www"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
