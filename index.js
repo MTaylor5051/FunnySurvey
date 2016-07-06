@@ -9,7 +9,7 @@ var message = require('./routes/message');
 var results = require('./routes/results');
 
 // initialize MongoDB connection
-require('./app_api/models/db');
+require('./models/db');
 
 // Create Express web app with some useful middleware
 var app = express();
