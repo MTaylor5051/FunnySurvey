@@ -31,3 +31,5 @@ app.get('/results', results);
 // server.listen(config.port, function() {
 //     console.log('Express server started on *:'+config.port);
 // });
+
+module.exports = app;
