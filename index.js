@@ -2,7 +2,6 @@ var http = require('http');
 var path = require('path');
 var express = require('express');
 var morgan = require('morgan');
-var mongoose = require('mongoose');
 var urlencoded = require('body-parser').urlencoded;
 var config = require('./config');
 var voice = require('./routes/voice');
@@ -10,7 +9,7 @@ var message = require('./routes/message');
 var results = require('./routes/results');
 
 // initialize MongoDB connection
-mongoose.connect(config.mongoUrl);
+require('./app_api/models/db');
 
 // Create Express web app with some useful middleware
 var app = express();
