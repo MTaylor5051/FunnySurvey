@@ -42,7 +42,7 @@ exports.interview = function(request, response) {
         if (questionIndex === 0) {
             say('Thank you for taking our survey. Please listen carefully '
                 + 'to the following questions. When this system asks a question, do not enter '
-                + 'your response until the system finishes asking the question, or your answer will not be'
+                + 'your response until the system finishes asking the question, or your answer will not be '
                 + 'recorded.');
         }
 
