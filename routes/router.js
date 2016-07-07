@@ -12,3 +12,5 @@ router.post('/message', message);
 
 // Ajax route to aggregate response data for the UI
 router.get('/results', results);
+
+module.exports = router;
