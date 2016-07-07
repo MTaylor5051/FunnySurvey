@@ -1,7 +1,7 @@
 var SurveyResponse = require('../models/SurveyResponse');
 var survey = require('../survey_data');
 
-// Grab all the latest survey data for display in a quick and dirty UI
+// Grab all the latest survey data for display in the UI
 module.exports = function(request, response) {
     SurveyResponse.find({
         complete: true
@@ -9,7 +9,6 @@ module.exports = function(request, response) {
         if (err) {
             response.status(500).send(err);
         } else {
-            console.log(docs.length);
             response.send({
                 survey: survey,
                 results: docs
