@@ -8,7 +8,6 @@ module.exports = function(request, response) {
         if (err) {
             response.status(500).send(err);
         } else {
-            console.log(complete.length);
             
         SurveyResponse.find({
              complete: false
