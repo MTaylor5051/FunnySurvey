@@ -11,4 +11,4 @@ router.post('/voice/:responseId/transcribe/:questionIndex', voice.transcription)
 router.post('/message', message);
 
 // Ajax route to aggregate response data for the UI
-app.get('/results', results);
+router.get('/results', results);
