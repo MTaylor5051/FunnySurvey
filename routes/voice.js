@@ -41,8 +41,9 @@ exports.interview = function(request, response) {
         // Add a greeting if this is the first question
         if (questionIndex === 0) {
             say('Thank you for taking our survey. Please listen carefully '
-                + 'to the following questions and do not enter your response until this system '
-                + 'finishes asking each question.');
+                + 'to the following questions. When this system asks a question, do not enter '
+                + 'your response until the system finishes asking the question, or your answer will not be'
+                + 'recorded.');
         }
 
         // Otherwise, ask the next question
