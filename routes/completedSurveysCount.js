@@ -16,9 +16,11 @@ module.exports = function(request, response) {
            if (err) {
                response.status(500).send(err);
            } else {
+               var totalSurveysStarted = complete.length + incomplete.length;
                 response.send({
                 completed: complete.length,
-                incomplete: incomplete.length
+                incomplete: incomplete.length,
+                totalSurveysStarted: totalSurveysStarted
             });
           }
          });
