@@ -14,6 +14,7 @@ app.use(urlencoded({ extended: true }));
 app.use(morgan('combined'));
 
 // Twilio Webhook routes
-require('./routes/router');
+var routes = require('./routes/router');
+app.use('/', routes);
 
 module.exports = app;
