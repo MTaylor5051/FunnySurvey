@@ -13,6 +13,6 @@ router.post('/message', message);
 
 // Ajax routes to aggregate response data for the UI
 router.get('/results', results);
-router.get('completedSurveysCount', completedSurveysCount);
+router.get('/completedSurveysCount', completedSurveysCount);
 
 module.exports = router;
