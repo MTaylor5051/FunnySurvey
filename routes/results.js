@@ -9,7 +9,7 @@ module.exports = function(request, response) {
         if (err) {
             response.status(500).send(err);
         } else {
-            console.log(docs[0]);
+            console.log(docs);
             response.send({
                 survey: survey,
                 results: docs
