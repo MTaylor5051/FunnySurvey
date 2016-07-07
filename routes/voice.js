@@ -41,7 +41,8 @@ exports.interview = function(request, response) {
         // Add a greeting if this is the first question
         if (questionIndex === 0) {
             say('Thank you for taking our survey. Please listen carefully '
-                + 'to the following questions.');
+                + 'to the following questions and do not enter your response until this system '
+                + 'finishes asking each question.');
         }
 
         // Otherwise, ask the next question
@@ -50,8 +51,8 @@ exports.interview = function(request, response) {
         // Depending on the type of question, we either need to get input via
         // DTMF tones or recorded speech
         if (question.type === 'text') {
-            say('Please record your response after the beep. '
-                + 'Press any key to finish.');
+            say('Please record your response after the beep and '
+                + 'press any key to finish.');
             twiml.record({
                 transcribe: true,
                 transcribeCallback: '/voice/' + surveyResponse._id
@@ -66,8 +67,8 @@ exports.interview = function(request, response) {
             });
         } else {
             // Only other supported type is number
-            say('Enter the number using the number keys on your telephone.' 
-                + ' Press star to finish.');
+            say('Enter the number using the number keys on your telephone and' 
+                + ' press star to finish.');
             twiml.gather({
                 timeout: 10,
                 finishOnKey: '*'
