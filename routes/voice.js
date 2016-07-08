@@ -53,7 +53,7 @@ exports.interview = function(request, response) {
         // DTMF tones or recorded speech
         if (question.type === 'text') {
             say('Please record your response after the beep and '
-                + 'press any key to finish.');
+                + 'press any key to finish. Your response cannot be more than 120 seconds long.');
             twiml.record({
                 transcribe: true,
                 transcribeCallback: '/voice/' + surveyResponse._id

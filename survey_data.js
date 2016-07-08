@@ -1,7 +1,7 @@
 // Hard coded survey questions
 module.exports = [
     {
-        text: 'What is the perfect age to be as an adult?',
+        text: 'At what age did you have the most fun?',
         type: 'number'
     },
     {
