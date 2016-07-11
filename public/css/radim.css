@@ -1,0 +1,320 @@
+.radim .nav,
+.radim .nav>li,
+.radim .navbar-header {
+    float: none
+}
+
+.radim.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    width: 228px;
+    border-radius: 0;
+    border-color: transparent;
+    margin-bottom: 0;
+    z-index: 9999
+}
+
+.radim .navbar-toggle {
+    display: block
+}
+
+.radim .navbar-collapse {
+    width: auto;
+    border-top: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+
+.radim .navbar-collapse.collapse {
+    display: block;
+    padding-bottom: 0;
+    height: auto!important;
+    overflow: visible!important
+}
+
+.radim .nav {
+    margin: 7.5px -16px;
+    width: 228px
+}
+
+.radim .radim-small .nav {
+    float: none;
+    margin: 7.5px -16px;
+    width: auto
+}
+
+.radim .nav .dropdown-submenu>li>a,
+.radim .nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 0
+}
+
+.radim .navbar-form {
+    padding: 10px 15px;
+    width: auto;
+    margin: 8px 0
+}
+
+.radim .navbar-form:after {
+    content: '';
+    display: table;
+    clear: both;
+    zoom: 1;
+    visibility: hidden;
+    height: 0
+}
+
+.radim .nav .open:before,
+.radim .navbar-form:before {
+    content: '';
+    zoom: 1;
+    display: block
+}
+
+.radim .navbar-form .form-control {
+    margin: 5px auto
+}
+
+.radim .nav .input-group {
+    height: 38px
+}
+
+.radim .nav .input-group .form-control,
+.radim .nav .input-group .input-group-btn,
+.radim .nav .input-group .input-group-btn .btn {
+    height: inherit
+}
+
+.radim .navbar-form [type=submit] {
+    float: right
+}
+
+.radim .seperator {
+    margin: 5px
+}
+
+@media (min-width:768px) {
+    .radim .navbar-left,
+    .radim .navbar-right {
+        float: none!important
+    }
+    .radim .navbar-form .form-group {
+        display: block;
+        margin-bottom: 5px;
+        vertical-align: baseline
+    }
+    .radim .navbar-form .form-control {
+        display: block;
+        width: 100%;
+        vertical-align: baseline
+    }
+    .radim .nav.navbar-right:last-child {
+        margin: 7.5px -15px
+    }
+}
+
+.radim .nav .dropdown.open .dropdown-menu {
+    position: static;
+    top: 0;
+    left: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    margin: 0
+}
+
+.radim .nav .open:after {
+    content: '';
+    display: table;
+    clear: both;
+    zoom: 1;
+    visibility: hidden;
+    height: 0
+}
+
+.radim .radim-small .nav .dropdown.open .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 53px;
+    width: 173px;
+}
+
+.radim .radim-small .nav .dropdown.open .dropdown-menu .dropdown-menu {
+    position: static;
+    top: 0;
+    left: 0;
+    width: 173px;
+}
+
+.radim .nav .dropdown.open .dropdown-menu li>a {
+    background-color: #333!important;
+    color: #fff!important
+}
+
+.radim .nav .open .dropdown-menu>li>a:focus,
+.radim .nav .open .dropdown-menu>li>a:hover {
+    color: inherit;
+    background-color: transparent
+}
+
+.radim .nav li:hover a,
+.radim.navbar .dropdown.open>a {
+    background-color: #333!important;
+    color: #fff!important;
+    width: 228px
+}
+
+.radim-small .dropdown .glyphicon:before {
+    content: "\e259"
+}
+
+.radim .nav .dropdown.open .dropdown-menu a {
+    width: 228px
+}
+
+.radim .radim-small .nav .dropdown.open .dropdown-menu a {
+    max-width: 175px
+}
+
+.radim .nav .dropdown li:hover>a {
+    width: 226px
+}
+
+.radim .nav .open .dropdown-menu .dropdown-header,
+.radim .nav .open .dropdown-menu>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 0
+}
+
+.radim-small .nav .navbar-form .form-group {
+    display: none;
+    height: 0
+}
+
+.radim-small .nav .navbar-form.active .form-group {
+    display: block;
+    height: auto
+}
+
+.radim-small .nav .navbar-form.active {
+    width: 226px;
+    background-color: #333;
+    display: block
+}
+
+.radim .radim-small .nav .input-group .form-control,
+.radim.navbar .radim-small .menu-description {
+    display: none
+}
+
+.radim-small .nav .navbar-form [type=submit] {
+    transform: rotateZ(-90deg);
+    -webkit-transform: rotateZ(-90deg);
+    -ms-transform: rotateZ(-90deg);
+    -moz-transform: rotateZ(-90deg);
+    -o-transform: rotateZ(-90deg);
+    transform-origin: top right;
+    -webkit-transform-origin: top right;
+    -ms-transform-origin: top right;
+    -moz-transform-origin: top right;
+    -o-transform-origin: top right;
+    right: 38px;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    height: 51px;
+    border-radius: 0;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    border: 0;
+}
+
+.radim-small .nav .navbar-form.active [type=submit] {
+    transform: rotateZ(0);
+    -webkit-transform: rotateZ(0);
+    -ms-transform: rotateZ(0);
+    -moz-transform: rotateZ(0);
+    -o-transform: rotateZ(0);
+    position: static;
+    height: auto
+}
+
+.container-radim {
+    margin-left: 227.66px
+}
+
+.radim .navbar-default .navbar-toggle {
+    border: none
+}
+
+.radim .navbar-toggle {
+    float: left
+}
+
+.radim .navbar-brand,
+.radim.navbar .badge {
+    float: right
+}
+
+.radim.navbar .menu-description {
+    margin-left: 20px
+}
+
+.radim .radim-small .nav .input-group .form-control:focus,
+.radim .radim-small .nav .input-group:hover .form-control {
+    display: block
+}
+
+.radim.navbar .radim-small .badge {
+    float: none;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    opacity: .5
+}
+
+.radim.navbar .radim-small .dropdown.open .badge {
+    float: none;
+    position: absolute;
+    border-radius: 10px;
+    height: auto;
+    width: auto;
+    top: 10px;
+    right: 15px;
+    opacity: 1
+}
+
+.radim .radim-small .nav .input-group:active,
+.radim .radim-small .nav .input-group:focus,
+.radim .radim-small .nav .input-group:hover {
+    width: 227px
+}
+
+.radim .radim-small .nav .input-group .form-control:focus {
+    width: inherit
+}
+
+.radim .input-group {
+    max-width: 227.66px
+}
+
+.radim .radim-small .dropdown.open .menu-description,
+.radim .radim-small li:hover a>.menu-description {
+    display: inline
+}
+
+.radim .dropdown-submenu ul {
+    display: none
+}
+
+.radim .dropdown-submenu.open ul {
+    display: block
+}
