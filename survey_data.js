@@ -1,7 +1,7 @@
 // Hard coded survey questions
 module.exports = [
     {
-        text: 'Are tabs, or spaces better?',
+        text: 'Are tabs better than spaces?',
         type: 'boolean'
     },
     {
