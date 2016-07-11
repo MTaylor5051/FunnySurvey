@@ -1,0 +1,162 @@
+@font-face {
+    font-family: chunkfive;
+    src: url(/fonts/Chunkfive.otf);
+}
+
+@font-face {
+    font-family: gillSans;
+    src: url(/fonts/GILLUBCD.otf);
+}
+
+#background-size-div{
+    height:100%;
+}
+#background-img-div{
+    background-image: url("/img/background.jpg");
+    height:100%;
+}
+.extra-large-text{
+    font-family: chunkfive;
+    color:#ffa500;
+    font-size: 5em;
+}
+.large-text{
+    font-family: chunkfive;
+    color:#ffa500;
+    font-size: 3em;
+}
+
+.small-text{
+    font-family: gillSans;
+    font-size:1.5em; 
+    color:black;
+}
+
+.extra-small-text{
+    font-family: gillSans;
+    font-size:1.2em; 
+    color:black;
+    letter-spacing: 2px;
+}
+
+.about-page-title{
+    font-family: gillSans;
+    font-size:2em; 
+    color:black;    
+}
+
+.about-michael-taylor-row-spacing{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.about-page-text{
+    font-family: gillSans;
+    font-size:1.4em; 
+    color:black;
+}
+
+.question-text{
+    font-family: gillSans;
+    font-size:1.85em; 
+    color:black;
+}
+
+.gill-sans-menu{
+    font-family: gillSans;
+    font-size:1.7em; 
+    font-weight: normal;
+    letter-spacing: 1px;
+    color:#e9e9e9;
+}
+
+.gill-sans-menu-active{
+    font-family: gillSans;
+    font-size:1.7em; 
+    font-weight: normal;
+    letter-spacing: 1px;
+    color:#ffa500;
+}
+.glyphicon-size{
+    font-size: 1.7em;
+    color:#e9e9e9;    
+}
+
+.glyphicon-size-active{
+    font-size: 1.7em;
+    color:#ffa500;
+}
+
+.header-row{
+    height:100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.question-row{
+    height:140px;
+}
+
+.text-corners {
+    border-radius: 0.2em;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    background: #ffa500;
+    color:black;
+}
+
+.play-button{
+    color: black;
+    font-size: 2.3em;
+    transition: color 1s;
+}
+
+.play-button:hover{
+    color: green;
+}
+
+.stop-button{
+    color: red;
+    font-size: 2.3em;
+}
+
+.row-height{
+    height: 60px;
+}
+/*Custom scrollbar css*/
+
+/* Scroll Bar Master Styling Starts Here */
+/* All comments can be freely removed from the css */
+
+.scrollgeneric {
+line-height: 1px;
+font-size: 1px;
+position: absolute;
+top: 0; left: 0;
+}
+
+.vscrollerbase {
+width: 10px;
+background-color: #e9e9e9;
+}
+.vscrollerbar {
+width: 10px;
+background-color: black;
+transition: background-color 1s;
+}
+
+.vscrollerbar:hover, .vscrollerbar:active {
+background-color: #ffa500;
+}
+
+#custom-scrollbar {
+/* Typical fixed height and fixed width example */
+width: 100%;
+height: 250px;
+overflow: auto;
+/* IE overflow fix, position must be relative or absolute*/
+position: relative;
+margin: 0.3em auto;
+padding: 15px;
+}
+
