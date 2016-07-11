@@ -8,10 +8,10 @@
     src: url(/fonts/GILLUBCD.otf);
 }
 
-#background-size-div{
+.background-size-div{
     height:100%;
 }
-#background-img-div{
+.background-img-div{
     background-image: url("/img/background.jpg");
     height:100%;
 }
