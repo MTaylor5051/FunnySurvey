@@ -1,8 +1,8 @@
 // Hard coded survey questions
 module.exports = [
     {
-        text: 'At what age did you have the most fun?',
-        type: 'number'
+        text: 'Are tabs, or spaces better?',
+        type: 'boolean'
     },
     {
         text: 'Have you ever sang along to a song you didn\'t know all the words to?',
