@@ -8,6 +8,13 @@
     src: url(/fonts/GILLUBCD.otf);
 }
 
+#background-size-div{
+    height:100%;
+}
+#background-img-div{
+    background-image: url("/img/background.jpg");
+    height:100%;
+}
 .extra-large-text{
     font-family: chunkfive;
     color:#ffa500;
