@@ -1,4 +1,4 @@
-﻿var app = angular.module('FinanceWolf', ['ngAnimate', 'ui.router']); // Create app
+﻿var app = angular.module('FunnySurvey', ['ngAnimate', 'ui.router']); // Create app
 
 // UI router
 app.config(function ($stateProvider, $urlRouterProvider) {
@@ -18,5 +18,5 @@ app.config(function ($stateProvider, $urlRouterProvider) {
     .state('about', {
         url: '/about',
         templateUrl: "views/about.html" 
-    })
+    });
 });
