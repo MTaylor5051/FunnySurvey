@@ -176,10 +176,10 @@ to prevent collapsing during animation*/
   position: absolute;
   left: 0;
   right: 0;
-  -webkit-transition:all .5s ease-in-out;
-	-moz-transition:all .5s ease-in-out;
-	-o-transition:all .5s ease-in-out;
-	transition:all .5s ease-in-out;
+  -webkit-transition:all 2s ease-in-out;
+	-moz-transition:all 2s ease-in-out;
+	-o-transition:all 2s ease-in-out;
+	transition:all 2s ease-in-out;
 }
 
 [ui-view].ng-enter {
@@ -195,9 +195,9 @@ to prevent collapsing during animation*/
 }
 
 [ui-view].ng-leave {
-  -webkit-transform:translateY(-100%);
-  -moz-transform:translateY(-100%);
-  transform:translateY(-100%);
+  -webkit-transform:translateY(100%);
+  -moz-transform:translateY(100%);
+  transform:translateY(100%);
 }
 
 [ui-view].ng-leave-active {
