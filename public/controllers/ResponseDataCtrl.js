@@ -1,6 +1,6 @@
 ﻿app.controller('ResponseDataCtrl', function ($scope, $http) {
 
-        $scope.optionsChart1 = {
+        $scope.options = {
             chart: {
                 type: 'pieChart',
                 height: 140,
@@ -27,23 +27,6 @@
                 y: 0
             }
         ];
-        
-        $scope.optionsChart2 = {
-            chart: {
-                type: 'pieChart',
-                height: 140,
-                donut: false,
-                color: ['#ffa500', '#939393'],
-                x: function(d){return d.key;},
-                y: function(d){return d.y;},
-                showLabels: true,
-                showLegend: false,
-                pie: {
-                    startAngle: function(d) { return d.startAngle -Math.PI },
-                    endAngle: function(d) { return d.endAngle -Math.PI }
-                }
-            }
-        };
 
         $scope.dataChart2 = [
             {
@@ -56,23 +39,6 @@
             }
         ];
 
-        $scope.optionsChart3 = {
-            chart: {
-                type: 'pieChart',
-                height: 140,
-                donut: false,
-                color: ['#ffa500', '#939393'],
-                x: function(d){return d.key;},
-                y: function(d){return d.y;},
-                showLabels: true,
-                showLegend: false,
-                pie: {
-                    startAngle: function(d) { return d.startAngle -Math.PI },
-                    endAngle: function(d) { return d.endAngle -Math.PI }
-                }
-            }
-        };
-
         $scope.dataChart3 = [
             {
                 key: "Yes",
@@ -84,22 +50,6 @@
             }
         ];
 
-        $scope.optionsChart4 = {
-            chart: {
-                type: 'pieChart',
-                height: 140,
-                donut: false,
-                color: ['#ffa500', '#939393'],
-                x: function(d){return d.key;},
-                y: function(d){return d.y;},
-                showLabels: true,
-                showLegend: false,
-                pie: {
-                    startAngle: function(d) { return d.startAngle -Math.PI },
-                    endAngle: function(d) { return d.endAngle -Math.PI }
-                }
-            }
-        };
 
         $scope.dataChart4 = [
             {
