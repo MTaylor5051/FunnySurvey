@@ -5,7 +5,7 @@ $scope.options = {
                 type: 'pieChart',
                 height: 350,
                 donut: false,
-                color: ['#ffa500', '#2cabe2'],
+                color: ['#ffa500', '#939393'],
                 x: function(d){return d.key;},
                 y: function(d){return d.y;},
                 showLabels: true,
