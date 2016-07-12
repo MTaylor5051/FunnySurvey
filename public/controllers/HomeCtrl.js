@@ -38,7 +38,7 @@ $http({
         ];
         
     $scope.stats.startedSurveys = response.data.totalSurveysStarted;
-    $scope.stats.completedSurveysPercent = Math.round(response.data.totalSurveysStarted / response.data.completed);
+    $scope.stats.completedSurveysPercent = Math.round(response.data.totalSurveysStarted / response.data.completed) * 100;
     
 }, function errorCallback(response) {
     // called asynchronously if an error occurs
