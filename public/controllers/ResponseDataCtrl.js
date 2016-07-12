@@ -2,7 +2,7 @@
         $scope.optionsChart1 = {
             chart: {
                 type: 'pieChart',
-                height: 140,
+                height: 240,
                 donut: false,
                 color: ['#ffa500', '#939393'],
                 x: function(d){return d.key;},
