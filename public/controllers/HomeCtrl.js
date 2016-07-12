@@ -1,4 +1,5 @@
 ﻿app.controller('HomeCtrl', function ($scope, $http) {
+$scope.stats = {};    
 $scope.stats.completedSurveysPercent = "...";
 $scope.stats.startedSurveys = "...";
 
