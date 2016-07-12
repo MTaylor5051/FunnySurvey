@@ -3,7 +3,7 @@
         $scope.optionsChart1 = {
             chart: {
                 type: 'pieChart',
-                height: 150,
+                height: 140,
                 donut: false,
                 color: ['#ffa500', '#939393'],
                 x: function(d){return d.key;},
@@ -31,7 +31,7 @@
         $scope.optionsChart2 = {
             chart: {
                 type: 'pieChart',
-                height: 150,
+                height: 140,
                 donut: false,
                 color: ['#ffa500', '#939393'],
                 x: function(d){return d.key;},
@@ -59,7 +59,7 @@
         $scope.optionsChart3 = {
             chart: {
                 type: 'pieChart',
-                height: 150,
+                height: 140,
                 donut: false,
                 color: ['#ffa500', '#939393'],
                 x: function(d){return d.key;},
@@ -87,7 +87,7 @@
         $scope.optionsChart4 = {
             chart: {
                 type: 'pieChart',
-                height: 150,
+                height: 140,
                 donut: false,
                 color: ['#ffa500', '#939393'],
                 x: function(d){return d.key;},
