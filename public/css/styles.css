@@ -195,9 +195,9 @@ to prevent collapsing during animation*/
 }
 
 [ui-view].ng-leave {
-  -webkit-transform:translateY(100%);
-  -moz-transform:translateY(100%);
-  transform:translateY(100%);
+  -webkit-transform:translateY(-100%);
+  -moz-transform:translateY(-100%);
+  transform:translateY(-100%);
 }
 
 [ui-view].ng-leave-active {
