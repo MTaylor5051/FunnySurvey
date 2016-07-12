@@ -183,9 +183,9 @@ to prevent collapsing during animation*/
 }
 
 [ui-view].ng-enter {
-  -webkit-transform:translateX(-100%);
-  -moz-transform:translateX(-100%);
-  transform:translateX(-100%);
+  -webkit-transform:translateX(100%);
+  -moz-transform:translateX(100%);
+  transform:translateX(100%);
 }
 
 [ui-view].ng-enter-active {
@@ -202,7 +202,7 @@ to prevent collapsing during animation*/
 }
 
 [ui-view].ng-leave-active {
-  -webkit-transform:translateX(100%);
-  -moz-transform:translateX(100%);
-  transform:translateX(100%);
+  -webkit-transform:translateX(-100%);
+  -moz-transform:translateX(-100%);
+  transform:translateX(-100%);
 }
