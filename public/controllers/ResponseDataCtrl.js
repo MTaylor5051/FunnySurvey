@@ -68,9 +68,9 @@
         $scope.audioPlayer.src = '';
         $scope.audioPlayer.answers = [];
         $scope.audioPlayer.changeAudio = function(songURL) {
+                        console.log(songURL)
             $scope.audioPlayer.src = songURL;
-            console.log(songURL)
-            document.getElementById('audioPlayer').play();
+         //   document.getElementById('audioPlayer').play();
         }
         $scope.audioPlayer.stopAudio = function(){
             document.getElementById('audioPlayer').pause();
