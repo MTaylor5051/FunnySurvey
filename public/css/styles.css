@@ -161,37 +161,52 @@ padding: 15px;
 }
 
 /* Smooth ng-animations for router */
+/* Have to set height explicity on ui-view 
+to prevent collapsing during animation*/
+.well[ui-view]{
+ height: 65px; 
+}
 
 .ui-view-container {
-position: relative;
+  position: relative;
 }
 
 [ui-view].ng-enter, [ui-view].ng-leave {
-position: absolute;
-left: 0;
-right: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  -webkit-transition:all .5s ease-in-out;
+	-moz-transition:all .5s ease-in-out;
+	-o-transition:all .5s ease-in-out;
+	transition:all .5s ease-in-out;
 }
 
 [ui-view].ng-enter {
--webkit-animation: slideInRight 0.5s;
-animation: slideInRight 0.5s;
+  opacity: 0;
+  -webkit-transform:scale3d(0.5, 0.5, 0.5);
+  -moz-transform:scale3d(0.5, 0.5, 0.5);
+  transform:scale3d(0.5, 0.5, 0.5);
 }
 
-/*[ui-view].ng-enter-active {}*/
+[ui-view].ng-enter-active {
+  opacity: 1;
+  -webkit-transform:scale3d(1, 1, 1);
+  -moz-transform:scale3d(1, 1, 1);
+  transform:scale3d(1, 1, 1);
+}
 
 [ui-view].ng-leave {
--webkit-animation: slideOutLeft 0.5s;
-animation: slideOutLeft 0.5s;
+  opacity: 1;
+  /*padding-left: 0px;*/  
+  -webkit-transform:translate3d(0, 0, 0);
+  -moz-transform:translate3d(0, 0, 0);
+  transform:translate3d(0, 0, 0);
 }
 
-/*[ui-view].ng-leave-active {}*/
-
-[ui-view].ng-enter.back {
--webkit-animation: slideInLeft 0.5s;
-animation: slideInLeft 0.5s;
-}
-
-[ui-view].ng-leave.back {
--webkit-animation: slideOutRight 0.5s;
-animation: slideOutRight 0.5s;
+[ui-view].ng-leave-active {
+  opacity: 0;
+  /*padding-left: 100px;*/
+  -webkit-transform:translate3d(100px, 0, 0);
+  -moz-transform:translate3d(100px, 0, 0);
+  transform:translate3d(100px, 0, 0);
 }
