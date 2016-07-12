@@ -1,5 +1,6 @@
 ﻿app.controller('ResponseDataCtrl', function ($scope, $http) {
 
+        // Chart Options
         $scope.options = {
             chart: {
                 type: 'pieChart',
@@ -62,6 +63,18 @@
             }
         ];
         
+        //Audio Player
+        $scope.audioPlayer = {};
+        $scope.audioPlayer.src = '';
+        $scope.audioPlayer.answers = [];
+        $scope.audioPlayer.changeAudio = function(songURL) {
+            this.audioPlayer.src = songURL;
+            document.getElementById('audioPlayer').play();
+        }
+        $scope.audioPlayer.stopAudio = function(){
+            document.getElementById('audioPlayer').pause();
+        }
+        
        $http({
             method: 'GET',
             url: '/results'
@@ -92,6 +105,8 @@
                 } else{
                     $scope.dataChart4[1].y++;
                 } 
+                response.data.results[i].responses[4].playButtonVisible = true;
+                $scope.audioPlayer.answers.push(response.data.results[i].responses[4])
             }
 
         }, function errorCallback(response) {

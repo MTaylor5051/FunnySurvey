@@ -92,21 +92,12 @@
 
                             <div id="custom-scrollbar" class="flexcroll">
                             <table class="table table-bordered  table-striped table-responsive" style="width:99%;">
-                                <tr class="row-height">
-                                    <td class="col-sm-11 text-center extra-small-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consequat diam sed arcu imperdiet,Phasellus sed.</td>
-                                    <td class="col-sm-1 text-center"><i class="glyphicon glyphicon-play play-button" title="Play Audio"></i></td>
-                                </tr>
-                                <tr class="row-height">
-                                    <td class="col-sm-11 text-center extra-small-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consequat diam sed arcu imperdiet. Phasellus sed.</td>
-                                    <td class="col-sm-1 text-center"><i class="glyphicon glyphicon-stop stop-button" title="Stop Audio"></i></td>
-                                </tr>
-                                <tr class="row-height">
-                                    <td class="col-sm-11 text-center extra-small-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consequat diam sed arcu imperdiet,Phasellus sed.</td>
-                                    <td class="col-sm-1 text-center"><i class="glyphicon glyphicon-play play-button" title="Play Audio"></i></td>
-                                </tr>
-                                <tr class="row-height">
-                                    <td class="col-sm-11 text-center extra-small-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam consequat diam sed arcu imperdiet. Phasellus sed.</td>
-                                    <td class="col-sm-1 text-center"><i class="glyphicon glyphicon-stop stop-button" title="Stop Audio"></i></td>
+                                <tr class="row-height" ng-repeat="reply in audioPlayer.answers">
+                                    <td class="col-sm-11 text-center extra-small-text">{{reply.answer}}</td>
+                                    <td class="col-sm-1 text-center">
+                                        <i class="glyphicon glyphicon-play play-button" title="Play Audio" ng-click="audioPlayer.changeAudio(reply.recordingUrl);reply.playButtonVisible = false;" ng-show="reply.playButtonVisible"></i>
+                                        <i class="glyphicon glyphicon-stop stop-button" title="Stop Audio" ng-click="audioPlayer.stopAudio();reply.playButtonVisible = true;" ng-show="!reply.playButtonVisible"></i>
+                                    </td>
                                 </tr>
                             </table>
                             </div>                        
@@ -115,3 +106,4 @@
                 </div>
             </div>
         </div>
+        <audio id="audioPlayer" src="{{audioPlayer.src}}" style="display:none;"></audio>
