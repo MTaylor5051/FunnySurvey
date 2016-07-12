@@ -67,9 +67,14 @@
         $scope.audioPlayer.domElement = document.getElementById('audioPlayer');
         $scope.audioPlayer.src = '';
         $scope.audioPlayer.answers = [];
-        $scope.audioPlayer.toggleAudio = function(songURL, playPause) {
+        $scope.audioPlayer.toggleAudio = function(songURL, playPause, arrIndex) {
             
             if(playPause){
+            for(i in $scope.audioPlayer.answers){
+                $scope.audioPlayer.answers[i].playButtonVisible = true;
+            }     
+            $scope.audioPlayer.answers[arrIndex].playButtonVisible = false;
+            
             $scope.audioPlayer.domElement.src = songURL;
             $scope.audioPlayer.domElement.play();
             } else{
