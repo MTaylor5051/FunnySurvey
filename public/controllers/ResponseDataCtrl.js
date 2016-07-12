@@ -116,30 +116,28 @@
             method: 'GET',
             url: '/results'
         }).then(function successCallback(response) {
-            
-            
+                   
             for(i in response.data.results){
-                response.data.results[i].responses
-                console.log(response.data.results[i].responses[0])
-                if(response.data.results[i].responses[0]){
+
+                if(response.data.results[i].responses[0].answer){
                     $scope.dataChart1[0].y++;
                 } else{
                     $scope.dataChart1[1].y++;
                 }
                 
-                if(response.data.results[i].responses[1]){
+                if(response.data.results[i].responses[1].answer){
                     $scope.dataChart2[0].y++;
                 } else{
                     $scope.dataChart2[1].y++;
                 }
  
-                 if(response.data.results[i].responses[2]){
+                 if(response.data.results[i].responses[2].answer){
                     $scope.dataChart3[0].y++;
                 } else{
                     $scope.dataChart3[1].y++;
                 }
 
-                if(response.data.results[i].responses[3]){
+                if(response.data.results[i].responses[3].answer){
                     $scope.dataChart4[0].y++;
                 } else{
                     $scope.dataChart4[1].y++;
