@@ -128,7 +128,7 @@
                 }
                 console.log(response.data.results[i].responses)
             }
-            
+            console.log($scope.dataChart1)
         }, function errorCallback(response) {
              console.log(response);
         });
