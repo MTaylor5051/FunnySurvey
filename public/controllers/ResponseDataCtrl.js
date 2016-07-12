@@ -1,4 +1,5 @@
 ﻿app.controller('ResponseDataCtrl', function ($scope, $http) {
+      $scope.fasdfsdf = "dfasdfaf";
         $scope.optionsChart1 = {
             chart: {
                 type: 'pieChart',
