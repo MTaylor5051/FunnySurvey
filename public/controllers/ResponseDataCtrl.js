@@ -1,5 +1,4 @@
 ﻿app.controller('ResponseDataCtrl', function ($scope, $http) {
-
         // Chart Options
         $scope.options = {
             chart: {
@@ -65,15 +64,15 @@
         
         //Audio Player
         $scope.audioPlayer = {};
+        $scope.audioPlayer.domElement = document.getElementById('audioPlayer');
         $scope.audioPlayer.src = '';
         $scope.audioPlayer.answers = [];
         $scope.audioPlayer.changeAudio = function(songURL) {
-                        console.log(songURL)
-            $scope.audioPlayer.src = songURL;
-         //   document.getElementById('audioPlayer').play();
+            $scope.audioPlayer.domElement.src = songURL;
+            $scope.audioPlayer.domElement.play();
         }
         $scope.audioPlayer.stopAudio = function(){
-            document.getElementById('audioPlayer').pause();
+            $scope.audioPlayer.domElement.pause();
         }
         
        $http({
