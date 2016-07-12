@@ -48,11 +48,11 @@
         $scope.dataChart2 = [
             {
                 key: "Yes",
-                y: 5
+                y: 0
             },
             {
                 key: "No",
-                y: 2
+                y: 0
             }
         ];
 
@@ -76,11 +76,11 @@
         $scope.dataChart3 = [
             {
                 key: "Yes",
-                y: 5
+                y: 0
             },
             {
                 key: "No",
-                y: 2
+                y: 0
             }
         ];
 
@@ -104,11 +104,11 @@
         $scope.dataChart4 = [
             {
                 key: "Yes",
-                y: 5
+                y: 0
             },
             {
                 key: "No",
-                y: 2
+                y: 0
             }
         ];
         
@@ -126,6 +126,25 @@
                 } else{
                     $scope.dataChart1[1].y++;
                 }
+                
+                if(response.data.results[i].responses[1]){
+                    $scope.dataChart2[0].y++;
+                } else{
+                    $scope.dataChart2[1].y++;
+                }
+ 
+                 if(response.data.results[i].responses[2]){
+                    $scope.dataChart3[0].y++;
+                } else{
+                    $scope.dataChart3[1].y++;
+                }
+
+                if(response.data.results[i].responses[3]){
+                    $scope.dataChart4[0].y++;
+                } else{
+                    $scope.dataChart4[1].y++;
+                } 
+                                
                 console.log(response.data.results[i].responses)
             }
             console.log($scope.dataChart1)
