@@ -176,10 +176,10 @@ to prevent collapsing during animation*/
   position: absolute;
   left: 0;
   right: 0;
-  -webkit-transition:all 0.5s ease-in-out;
-	-moz-transition:all 0.5s ease-in-out;
-	-o-transition:all 0.5s ease-in-out;
-	transition:all 0.5s ease-in-out;
+  -webkit-transition:all 1s ease-in-out;
+	-moz-transition:all 1s ease-in-out;
+	-o-transition:all 1s ease-in-out;
+	transition:all 1s ease-in-out;
 }
 
 [ui-view].ng-enter {
