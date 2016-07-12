@@ -20,11 +20,11 @@
         $scope.dataChart1 = [
             {
                 key: "Yes",
-                y: 5
+                y: 0
             },
             {
                 key: "No",
-                y: 2
+                y: 0
             }
         ];
         
@@ -120,6 +120,12 @@
             
             for(i in response.data.results){
                 response.data.results[i].responses
+                
+                if(response.data.results[i].responses[0]){
+                    $scope.dataChart1[0].y++;
+                } else{
+                    $scope.dataChart1[1].y++;
+                }
                 console.log(response.data.results[i].responses)
             }
             
