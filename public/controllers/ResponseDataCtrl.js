@@ -79,6 +79,7 @@
             $scope.audioPlayer.domElement.play();
             } else{
                 $scope.audioPlayer.domElement.pause();
+                $scope.audioPlayer.answers[arrIndex].playButtonVisible = true;
             }
         }
         
