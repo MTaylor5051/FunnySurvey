@@ -116,7 +116,7 @@
             method: 'GET',
             url: '/results'
         }).then(function successCallback(response) {
-            console.log(response.data.responses)
+            console.log(response.data.results)
 
         }, function errorCallback(response) {
              console.log(response);
