@@ -3,8 +3,9 @@
 $scope.options = {
             chart: {
                 type: 'pieChart',
-                height: 200,
-                donut: true,
+                height: 350,
+                donut: false,
+                color: ['#ffa500', '#2cabe2'],
                 x: function(d){return d.key;},
                 y: function(d){return d.y;},
                 showLabels: true,
@@ -18,11 +19,11 @@ $scope.options = {
 
         $scope.data = [
             {
-                key: "One",
+                key: "Started",
                 y: 5
             },
             {
-                key: "Two",
+                key: "Completed",
                 y: 2
             }
         ];
