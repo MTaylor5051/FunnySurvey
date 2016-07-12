@@ -116,8 +116,13 @@
             method: 'GET',
             url: '/results'
         }).then(function successCallback(response) {
-            console.log(response.data.results)
-
+            
+            
+            for(i in response.data.results){
+                response.data.results[i].responses
+                console.log(response.data.results[i].responses)
+            }
+            
         }, function errorCallback(response) {
              console.log(response);
         });
