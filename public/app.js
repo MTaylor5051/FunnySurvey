@@ -1,4 +1,4 @@
-﻿var app = angular.module('FunnySurvey', ['ngAnimate', 'ui.router']); // Create app
+﻿var app = angular.module('FunnySurvey', ['ngAnimate', 'ui.router', 'nvd3']); // Create app
 
 // UI router
 app.config(function ($stateProvider, $urlRouterProvider) {
