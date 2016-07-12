@@ -58,7 +58,9 @@
 
 .question-text{
     font-family: gillSans;
-    line-height: 140px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;   
     font-size:1.85em; 
     color:black;
 }
@@ -96,6 +98,7 @@
 
 .question-row{
     height:140px;
+    line-height: 140px;
 }
 
 .text-corners {
