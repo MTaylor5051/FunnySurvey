@@ -120,7 +120,7 @@
             
             for(i in response.data.results){
                 response.data.results[i].responses
-                
+                console.log(response.data.results[i].responses[0])
                 if(response.data.results[i].responses[0]){
                     $scope.dataChart1[0].y++;
                 } else{
@@ -144,10 +144,8 @@
                 } else{
                     $scope.dataChart4[1].y++;
                 } 
-                                
-                console.log(response.data.results[i].responses)
             }
-            console.log($scope.dataChart1)
+
         }, function errorCallback(response) {
              console.log(response);
         });
