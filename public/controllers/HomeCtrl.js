@@ -1,5 +1,5 @@
 ﻿app.controller('HomeCtrl', function ($scope, $http) {
-console.log(99)
+
 $scope.options = {
             chart: {
                 type: 'pieChart',
