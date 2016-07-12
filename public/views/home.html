@@ -51,8 +51,8 @@
             </div>
                 <div class="row">
                     <div class="col-sm-5 col-sm-offset-1 text-center">
-                        <span class="large-text"><span class="text-corners">96%</span> of Surveys Completed</span><br />
-                        <span class="small-text">Out of <span class="text-corners">20</span> surveys started.</span><br />
+                        <span class="large-text"><span class="text-corners">{{stats.completedSurveysPercent}}%</span> of Surveys Completed</span><br />
+                        <span class="small-text">Out of <span class="text-corners">{{stats.startedSurveys}}</span> surveys started.</span><br />
                         <nvd3 options="options" data="data"></nvd3>
                     </div>
                     <div class="col-sm-5">

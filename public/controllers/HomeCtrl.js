@@ -1,4 +1,6 @@
 ﻿app.controller('HomeCtrl', function ($scope, $http) {
+$scope.stats.completedSurveysPercent = "...";
+$scope.stats.startedSurveys = "...";
 
 $scope.options = {
             chart: {
@@ -23,16 +25,19 @@ $http({
   url: '/completedSurveysCount'
 }).then(function successCallback(response) {
     console.log(response.data)
-    //    $scope.data = [
-    //         {
-    //             key: "Started",
-    //             y: response.data.
-    //         },
-    //         {
-    //             key: "Completed",
-    //             y: 2
-    //         }
-    //     ];
+       $scope.data = [
+            {
+                key: "Completed",
+                y: response.data.completed
+            },
+            {
+                key: "Incomplete",
+                y: response.data.incomplete
+            }
+        ];
+        
+    $scope.stats.startedSurveys = response.data.totalSurveysStarted;
+    $scope.stats.completedSurveysPercent = Math.round(response.data.totalSurveysStarted / response.data.completed);
     
 }, function errorCallback(response) {
     // called asynchronously if an error occurs
