@@ -183,14 +183,12 @@ to prevent collapsing during animation*/
 }
 
 [ui-view].ng-enter {
-    opacity:0;
   -webkit-transform:translateY(-100%);
   -moz-transform:translateY(-100%);
   transform:translateY(-100%);
 }
 
 [ui-view].ng-enter-active {
-    opacity:0;
   -webkit-transform:translateY(0);
   -moz-transform:translateY(0);
   transform:translateY(0);
