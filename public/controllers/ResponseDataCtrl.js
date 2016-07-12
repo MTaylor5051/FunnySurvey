@@ -17,6 +17,34 @@
             }
         };
 
+
+        
+        //Audio Player
+        $scope.audioPlayer = {};
+        $scope.audioPlayer.domElement = document.getElementById('audioPlayer');
+        $scope.audioPlayer.src = '';
+        $scope.audioPlayer.answers = [];
+        $scope.audioPlayer.toggleAudio = function(songURL, playPause, arrIndex) {
+            
+            if(playPause){
+            for(i in $scope.audioPlayer.answers){
+                $scope.audioPlayer.answers[i].playButtonVisible = true;
+            }     
+            $scope.audioPlayer.answers[arrIndex].playButtonVisible = false;
+            
+            $scope.audioPlayer.domElement.src = songURL;
+            $scope.audioPlayer.domElement.play();
+            } else{
+                $scope.audioPlayer.domElement.pause();
+                $scope.audioPlayer.answers[arrIndex].playButtonVisible = true;
+            }
+        }
+        
+       $http({
+            method: 'GET',
+            url: '/results'
+        }).then(function successCallback(response) {
+
         $scope.dataChart1 = [
             {
                 key: "Yes",
@@ -60,33 +88,8 @@
                 key: "No",
                 y: 0
             }
-        ];
-        
-        //Audio Player
-        $scope.audioPlayer = {};
-        $scope.audioPlayer.domElement = document.getElementById('audioPlayer');
-        $scope.audioPlayer.src = '';
-        $scope.audioPlayer.answers = [];
-        $scope.audioPlayer.toggleAudio = function(songURL, playPause, arrIndex) {
-            
-            if(playPause){
-            for(i in $scope.audioPlayer.answers){
-                $scope.audioPlayer.answers[i].playButtonVisible = true;
-            }     
-            $scope.audioPlayer.answers[arrIndex].playButtonVisible = false;
-            
-            $scope.audioPlayer.domElement.src = songURL;
-            $scope.audioPlayer.domElement.play();
-            } else{
-                $scope.audioPlayer.domElement.pause();
-                $scope.audioPlayer.answers[arrIndex].playButtonVisible = true;
-            }
-        }
-        
-       $http({
-            method: 'GET',
-            url: '/results'
-        }).then(function successCallback(response) {
+        ];                   
+                   
                    
             for(i in response.data.results){
 
