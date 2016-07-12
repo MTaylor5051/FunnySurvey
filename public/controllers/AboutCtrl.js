@@ -1,3 +1,3 @@
-﻿app.controller('ResponseDataCtrl', function ($scope, $http) {
+﻿app.controller('AboutCtrl', function ($scope, $http) {
 
 });
