@@ -20,7 +20,7 @@ $scope.options = {
             }
         };
 
-// Simple GET request example:
+
 $http({
   method: 'GET',
   url: '/completedSurveysCount'
@@ -38,11 +38,10 @@ $http({
         ];
         
     $scope.stats.startedSurveys = response.data.totalSurveysStarted;
-    $scope.stats.completedSurveysPercent = Math.round(response.data.totalSurveysStarted / response.data.completed) * 100;
+    $scope.stats.completedSurveysPercent = Math.round(response.data.completed / response.data.totalSurveysStarted) * 100;
     
 }, function errorCallback(response) {
-    // called asynchronously if an error occurs
-    // or server returns response with an error status.
+    console.log(response);
 });
 
 });
