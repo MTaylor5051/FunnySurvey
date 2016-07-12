@@ -94,8 +94,8 @@
                             <table class="table table-bordered  table-striped table-responsive" style="width:99%;">
                                 <tr class="row-height" ng-repeat="reply in audioPlayer.answers">
                                     <td class="col-sm-11 text-center extra-small-text">{{reply.answer}}</td>
-                                    <td class="col-sm-1 text-center">{{reply.playButtonVisible}}
-                                        <i ng-show="reply.playButtonVisible" ng-class="reply.playButtonVisible ? 'glyphicon glyphicon-play play-button' : 'glyphicon glyphicon-stop stop-button'" title="Play Audio" ng-click="audioPlayer.toggleAudio(reply.recordingUrl, reply.playButtonVisible);reply.playButtonVisible = !reply.playButtonVisible;"></i>
+                                    <td class="col-sm-1 text-center">
+                                        <i ng-class="reply.playButtonVisible ? 'glyphicon glyphicon-play play-button' : 'glyphicon glyphicon-stop stop-button'" title="Play Audio" ng-click="audioPlayer.toggleAudio(reply.recordingUrl, reply.playButtonVisible);reply.playButtonVisible = !reply.playButtonVisible;"></i>
                                     </td>
                                 </tr>
                             </table>
