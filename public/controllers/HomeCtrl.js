@@ -38,9 +38,8 @@ $http({
         ];
         
     $scope.stats.startedSurveys = response.data.totalSurveysStarted;
-    var percentage = response.data.completed / response.data.totalSurveysStarted;
-    console.log(percentage)
-    $scope.stats.completedSurveysPercent = Math.round(percentage) * 100;
+
+    $scope.stats.completedSurveysPercent = Math.round(response.data.completed / response.data.totalSurveysStarted * 100);
     console.log(response.data.completed + ' ' + response.data.totalSurveysStarted)
     
 }, function errorCallback(response) {
