@@ -112,4 +112,13 @@
             }
         ];
         
+       $http({
+            method: 'GET',
+            url: '/results'
+        }).then(function successCallback(response) {
+            console.log(response.data.responses)
+
+        }, function errorCallback(response) {
+             console.log(response);
+        });
 });

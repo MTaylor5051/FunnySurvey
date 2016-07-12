@@ -21,11 +21,10 @@ $scope.options = {
         };
 
 
-$http({
-  method: 'GET',
-  url: '/completedSurveysCount'
-}).then(function successCallback(response) {
-    console.log(response.data)
+    $http({
+         method: 'GET',
+         url: '/completedSurveysCount'
+    }).then(function successCallback(response) {
        $scope.data = [
             {
                 key: "Completed",
@@ -40,8 +39,8 @@ $http({
     $scope.stats.startedSurveys = response.data.totalSurveysStarted;
     $scope.stats.completedSurveysPercent = Math.round(response.data.completed / response.data.totalSurveysStarted * 100);
     
-}, function errorCallback(response) {
-    console.log(response);
-});
+    }, function errorCallback(response) {
+      console.log(response);
+    });
 
 });
